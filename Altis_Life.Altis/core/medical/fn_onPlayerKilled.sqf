@@ -23,7 +23,7 @@ if  !((vehicle _unit) isEqualTo _unit) then {
 _multa_medico = 0 ;
 _multa_fogoamigo = 0 ;
 
-if ( playerSide == independent and _killer != _unit ) then { _multa_medico = 100000; BANK = BANK-100000;};
+if ( _killer != _unit and playerSide == independent) then { _multa_medico = 100000; BANK = BANK-100000;};
 
 if ( _killer != _unit ) then {
   if (side _killer == west and playerSide == west ) then {  _multa_fogoamigo = 10000; BANK = BANK-10000;}   

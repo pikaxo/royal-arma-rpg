@@ -22,7 +22,7 @@
 	If you don't want to use sound, add "" in the fourth params. ["Error","Oops it's not possible my friend",nil,"mySound"]
 	If you want a sound but you don't want to change the strip color, use nil as third params : ["Error","Oops it's not possible my friend",nil,""]
 
-	Exemple : ["Error","Oops it's not possible my friend",nil,""] call UPM_fnc_showNotification;
+	Exemple : ["INFO","Oops it's not possible my friend",[0.53,0.86,0.46,1],"info"] call UPM_fnc_showNotification;
 
 	Returns: -
 */

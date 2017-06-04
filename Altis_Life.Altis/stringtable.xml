@@ -10990,7 +10990,7 @@
             <Italian>Mordi e fuggi</Italian>
             <Polish>Uderz i uciekaj</Polish>
             <Russian></Russian>
-            <Portuguese>Fugir de Batida</Portuguese>
+            <Portuguese>Bater e fugir</Portuguese>
             <German>Fahrerflucht</German>
         </Key>
         <Key ID="STR_Crime_481">
@@ -11021,7 +11021,7 @@
             <French>Trafic de drogue</French>
             <Spanish>Tráfico de Drogas</Spanish>
             <Russian></Russian>
-            <Portuguese>Trafico de Drogas</Portuguese>
+            <Portuguese>Porte de Drogas</Portuguese>
             <German>Drogenhandel</German>
             <Italian>Vendita di droga</Italian>
             <Polish>Handel narkotykami</Polish>
@@ -11299,7 +11299,7 @@
             <Polish>Uderz i uciekaj</Polish>
             <Russian></Russian>
             <French>Délit de fuite</French>
-            <Portuguese>Bater e Fugir</Portuguese>
+            <Portuguese>Atropelamento e fuga</Portuguese>
             <German>Fahrerflucht</German>
         </Key>
         <Key ID="STR_Crime_20">

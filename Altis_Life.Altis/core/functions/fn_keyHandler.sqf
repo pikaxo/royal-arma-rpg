@@ -98,15 +98,16 @@ switch (_code) do {
 
     //Holster / recall weapon. (Shift + H)
     case 35: {
-        if (_shift && !(currentWeapon player isEqualTo "")) then {
-            if !(soundVolume isEqualTo 1) then {
-                life_curWep_h = currentWeapon player;
-                player action ["SwitchWeapon", player, player, 100];
-                player switchCamera cameraView;
-            } else {
-                if (life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
-                    player selectWeapon life_curWep_h;
-                };
+        if (_shift and !_ctrlKey and !(currentWeapon player isEqualTo "")) then {
+            life_curWep_h = currentWeapon player;
+            player action ["SwitchWeapon", player, player, 100];
+            player switchCamera cameraView;
+            [] call life_fnc_playerSkins;
+        };
+
+        if (!_shift and _ctrlKey and !isNil "life_curWep_h" and {!(life_curWep_h isEqualTo "")}) then {
+            if (life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
+                player selectWeapon life_curWep_h;
             };
         };
     };
@@ -167,6 +168,10 @@ switch (_code) do {
                     };
                 };
             };
+        } else {
+                if (_ctrlKey) then {
+                  if(!createDialog "channel");
+                };
         };
     };
 

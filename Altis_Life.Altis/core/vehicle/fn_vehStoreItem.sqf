@@ -25,7 +25,7 @@ _veh_data = life_trunk_vehicle getVariable ["Trunk",[[],0]];
 _inv = _veh_data select 0;
 
 if (_ctrl == "goldbar" && {!(life_trunk_vehicle isKindOf "LandVehicle")}) exitWith {hint localize "STR_NOTF_canOnlyStoreInLandVeh";};
-if (_ctrl == "oil_unprocessed" or "oil_processed" && {!(life_trunk_vehicle isKindOf "B_Truck_01_fuel_F" or "I_Truck_02_fuel_F" or "C_Van_01_fuel_F")}) exitWith {hint "Não podes transportar oleo sem ser em camiões sisterna!";};
+//if (_ctrl == "oil_unprocessed" or "oil_processed" && {!(life_trunk_vehicle isKindOf "B_Truck_01_fuel_F" or "I_Truck_02_fuel_F" or "C_Van_01_fuel_F")}) exitWith {hint "Não podes transportar oleo sem ser em camiões sisterna!";};
 
 
 if (_ctrl == "money") then {
