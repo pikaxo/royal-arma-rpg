@@ -745,6 +745,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
             }, "" },
             { "Medico", "med", {
+                "textures\med\car\medic_truckfram.jpg",
                 "textures\med\car\medic_truckbak.jpg"
             }, "" }
         };
