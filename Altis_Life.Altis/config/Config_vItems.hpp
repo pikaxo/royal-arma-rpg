@@ -20,14 +20,14 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator", "morphine" };
     };
 
     class rebel {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "blindfold", "ziptie", "gag" };
     };
 
     class gang {
@@ -63,6 +63,13 @@ class VirtualShops {
         side = "civ";
         conditions = "";
         items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
+    };
+
+    class uranium {
+        name = "STR_Shops_Uranium";
+        side = "civ";
+        conditions = "";
+        items[] = { "uranium_refined" };
     };
 
     class oil {
@@ -149,8 +156,8 @@ class VirtualItems {
         variable = "morphine";
         displayName = "STR_Item_Morphine";
         weight = 1;
-        buyPrice = 0;
-        sellPrice = 0;
+        buyPrice = -1;
+        sellPrice = -1;
         illegal = false;
         edible = -1;
         icon = "icons\Morphine.paa";
@@ -161,8 +168,8 @@ class VirtualItems {
         variable = "ziptie";
         displayName = "STR_Ziptie";
         weight = 6;
-        buyPrice = 5000;
-        sellPrice = 1200;
+        buyPrice = -1;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "icons\ziptie.paa";
@@ -172,8 +179,8 @@ class VirtualItems {
         variable = "gag";
         displayName = "STR_gag";
         weight = 7;
-        buyPrice = 3000;
-        sellPrice = 1000;
+        buyPrice = -1;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "icons\gag.paa";
@@ -183,8 +190,8 @@ class VirtualItems {
         variable = "blindfold";
         displayName = "STR_blindfold";
         weight = 7;
-        buyPrice = 3500;
-        sellPrice = 1200;
+        buyPrice = -1;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "icons\blindfold.paa";
@@ -333,6 +340,28 @@ class VirtualItems {
     };
 
     //Mined Items
+    class uranium_unrefined {
+        variable = "uraniumUnrefined";
+        displayName = "STR_Item_UraniumOre";
+        weight = 3;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\uranium_ore.paa";
+    };
+
+    class uranium_refined {
+        variable = "uraniumRefined";
+        displayName = "STR_Item_Uranium";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 6500; //Optional Price
+        illegal = true;
+        edible = -1;
+        icon = "icons\uranium_rod.paa";
+    };	
+
     class oil_unprocessed {
         variable = "oilUnprocessed";
         displayName = "STR_Item_OilU";
